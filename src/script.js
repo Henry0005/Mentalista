@@ -21,6 +21,7 @@ while (contador < limiteTentativas) {
 
   if (chute === numeroSecreto) {
     alert('Acertou!');
+    exibirGif("https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif");
     break;
   } else if (chute > numeroSecreto) {
     alert('Errou... o número secreto é menor');
@@ -31,4 +32,15 @@ while (contador < limiteTentativas) {
 
 if (contador === limiteTentativas) {
   alert('Suas tentativas acabaram! O número secreto era ' + numeroSecreto);
+  exibirGif("https://media.giphy.com/media/EXHHMS9caoxAA/giphy.gif");
 }
+
+function exibirGif(gifUrl) {
+  var imgElement = document.createElement("img");
+  imgElement.src = gifUrl;
+  imgElement.style.display = "block";
+  imgElement.style.margin = "auto"; 
+  document.body.appendChild(imgElement);
+}
+
+jogar();
