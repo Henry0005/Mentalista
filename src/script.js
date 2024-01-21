@@ -42,5 +42,3 @@ function exibirGif(gifUrl) {
   imgElement.style.margin = "auto"; 
   document.body.appendChild(imgElement);
 }
-
-jogar();
