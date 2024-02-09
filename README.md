@@ -2,11 +2,11 @@
 
 In English 🇬🇧
 
-A website with simple code with the challenge of choosing numbers and the user has to match these numbers, with a maximum number of attempts.
+This project, developed during Alura's 7th Dev Immersion, is a website that generates numbers that the user has to guess with just 7 attempts.
 
 Em Português 🇧🇷
 
-Um site com código simples com o desafio de escolher números e o usuário tem que acertar esses números, com uma quantidade máxima de tentativas.
+Este projeto, desenvolvido na 7ª Imersão Dev da Alura, é um site que gera números que o usuário tem o desafio de adivinha-los, com apenas 7 tentativas.
 
 
 A Pen created on CodePen.io. Original URL: [https://codepen.io/Henry0005/pen/MWLEErB](https://codepen.io/Henry0005/pen/MWLEErB).
