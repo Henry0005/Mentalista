@@ -1,6 +1,7 @@
 var numeroSecreto = Math.floor(Math.random() * 100) + 1;
 var limiteTentativas = 7;
 var contador = 0;
+var acertou = false;
 
 while (contador < limiteTentativas) {
   var chute = prompt('Tentativa ' + (contador + 1) + '/' + limiteTentativas + '\nDigite um número entre 1 e 100');
@@ -21,7 +22,7 @@ while (contador < limiteTentativas) {
 
   if (chute === numeroSecreto) {
     alert('Acertou!');
-    exibirGif("https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif");
+    acertou = true;
     break;
   } else if (chute > numeroSecreto) {
     alert('Errou... o número secreto é menor');
@@ -30,7 +31,9 @@ while (contador < limiteTentativas) {
   }
 }
 
-if (contador === limiteTentativas) {
+if (acertou) { 
+  exibirGif("https://media.giphy.com/media/xT8qBepJQzUjXpeWU8/giphy.gif");
+} else { 
   alert('Suas tentativas acabaram! O número secreto era ' + numeroSecreto);
   exibirGif("https://media.giphy.com/media/EXHHMS9caoxAA/giphy.gif");
 }
